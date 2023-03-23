@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { View } from "react-native";
 import AutocompleteInput from "react-native-autocomplete-input";
 import { styles } from "./styles";
 
 export function TextInputAutoComplete() {
+    const [data, setData] = useState();
+    const [query, setQuery] = useState("");
+
     return (
         <View style={styles.autocompleteContainer}>
             <AutocompleteInput
