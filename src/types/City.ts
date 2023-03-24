@@ -5,4 +5,5 @@ export interface City {
     longitude: number;
     country_code: string;
     country: string;
+    admin1: string;
 }
